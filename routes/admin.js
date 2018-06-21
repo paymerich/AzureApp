@@ -49,9 +49,9 @@ router.get('/', function (req, res, next) {
             const response = await db.collection('books').insertMany(books);
             res.json(response);
         } catch (error) {
-            console.log(error);
+            console.log("Error:"+ error);
         }
-    }())
+    }());
 
 });
 
